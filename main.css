@@ -9,32 +9,36 @@ body {
     overflow-x: hidden; 
 }
 
+/* TOP HEADER STYLING START */
 .menu-container {
     display: flex;
     justify-content: center;
     color: #fff;
-    background-color: #5995DA;
     padding: 20px 0;
+    height: 200px;
+    width: 100%;
 }
 
-.menu {
-    width: 900px;
-    display: flex;
+.page-heading {
     justify-content: center;
 }
 
-.hello {
+.page-title {
+    margin-left: 20px;
     font-weight: 100;
+    font-size: 40px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-bottom: 5px;
 }
 
-.links {
-    display: flex;
-    justify-content: flex-end;
+.page-description {
+    margin-left: 25px;
+    letter-spacing: 1px;
+    text-align: center;
 }
+/* TOP HEADER STYLING END */
 
+/* PERSONAL INFO SECTION STYLING START */
 .header-container {
     display: flex;
     justify-content: center;
@@ -47,12 +51,17 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
 .me-description {
     align-items: center;
 }
 
+.me-paragraph-one,
+.me-paragraph-two {
+    line-height: 1.6;
+}
+
 .me {
-    border: 1px #5995DA;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,13 +77,54 @@ body {
     -o-border-radius: 50%;
     border-radius: 50%;
 }
-.subheading {
-    margin-top: 10px;
+/* PERSONAL INFO SECTION STYLING END  */
+
+/* SKILLSET SECTION STYLING START */
+.skillset-container {
     display: flex;
-    align-items: flex-end;
-    font-size: 20px;
+    justify-content: center;
 }
 
-.login {
-    margin-left: 20px;
+.skillset {
+    align-items: flex-start;
+    width: 900px;
+    height: 600px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.skillset-column {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill,
+.skill-rating {
+    margin: 1em;
+    font-weight: 600;
+    line-height: 2.0;
+    border-left-width: 4px;
+}
+
+/* COLOR GRADIENT SETTINGS */
+.blue-gradient {
+    background-image: 
+        linear-gradient(
+            to bottom,
+            rgb(34, 125, 170) 0%,
+            rgb(81, 172, 205) 100%
+            /* to bottom,
+            #5995DA,
+            #fff */
+        );
 }
